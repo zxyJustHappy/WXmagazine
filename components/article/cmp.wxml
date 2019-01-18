@@ -1,0 +1,46 @@
+
+<view class="contianer">
+    <view class="mark-container">
+        <image class="avatar" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1091628847,41930541&fm=27&gp=0.jpg" />
+        <text class="text">neffy等19人马克了</text>
+    </view>
+
+    <view >
+        <d-bigImg wx:if="{{type == 0}}"
+                  img-src="{{}}"
+                  main-title="{{}}"/>
+
+        <d-nineImg wx:elif="{{type === 1}}"
+                   img-arr="{{}}"
+                   main-title="{{}}"/>
+
+        <d-imgText wx:elif="{{type === 2}}"
+                   main-title="{{}}"
+                   sub-head="{{}}"
+                   img-src="{{}}"/>
+
+        <d-video wx:elif="{{type === 3}}"
+                 main-title="{{}}"
+                 src="{{}}"
+                 duration="{{}}"
+                 poster="{{}}"
+                 video-id="{{}}"/>
+
+        <d-pureText wx:else
+                    main-title="{{}}"
+                    sub-head="{{}}"/>
+        
+    </view>
+
+    <view class="control-container">
+        <view >
+            <d-tag tag="{{'心理'}}" tgaId="{{}}"/>
+        </view>
+        <view class="control-box">
+            <d-more class="box" tag="{{}}"/>
+            <d-like class="box" like="{{}}"/>
+        </view>
+
+    </view>
+
+</view>

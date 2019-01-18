@@ -1,0 +1,9 @@
+/* pages/inside/inside.wxss */
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.name{
+  text-align: right;
+}
